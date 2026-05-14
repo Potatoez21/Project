@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="est.css">
+    <title>Nins Page</title>
+    <link rel="icon"
+        href="https://preview.redd.it/hd-sayori-chibi-v0-78xux2ti42c11.png?width=1080&crop=smart&auto=webp&s=39031edb30031441d6c1a94354f6c34a5f2c5f1d">
+    <style>
+        body {
+            background-image: url(https://i.pinimg.com/originals/e4/47/c5/e447c5bdd414dce7b88d3bd7536c9f47.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cuerpo {
+            position: relative;
+            background-color: #ccb583;
+            width: 750px;
+            margin: 40px auto;
+            padding: 60px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .Imagenes {
+            text-align: center;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #0a0a0a;
+
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .barra {
+            width: 0px;
+            overflow: hidden;
+            background-color: #b38219;
+            transition: width 0.5s;
+            height: 206vh;
+        }
+
+        .barra img {
+            display: block;
+            margin-top: 150px;
+            margin-left: 20px;
+            cursor: pointer;
+            width: 150px;
+            object-fit: contain;
+            height: 150px;
+        }
+
+        #Blur {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(5px);
+            z-index: 50;
+
+        }
+
+        #contenidoRec {
+            transition: all 0.5s ease;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            z-index: 100;
+            animation: entrada 0.5s ease;
+            overflow-y: scroll;
+            max-height: 90vh;
+            background-image: url(https://i.pinimg.com/736x/7f/18/34/7f1834f4b0f4c606737913aeef5dd07f.jpg);
+            background-size: cover;
+        }
+
+        @keyframes entrada {
+            from {
+                transform: scaleX(0);
+                transform-origin: center;
+            }
+
+            to {
+                transform: scaleX(1);
+                transform-origin: center;
+            }
+        }
+
+        #contenidoRec {
+
+            animation: entrada 0.5s ease;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="pageRec" style="display: none;">
+
+            <button style="position: fixed; top: 75px; right: 525px; z-index: 200;" onclick="cerrarcontenidoRec()">X</button>
+
+            <div id="Blur"></div>
+            <div id="contenidoRec">
+
+                <div id="contenidoCent" style="text-align: center;">
+
+                    <h1> Momentos en los cuales nos hemos divertido un monton</h1>
+
+                    <p> - Bienvenido al apartado de recuerditos :3 la verdad me costo mucho hacer esto tbh... pero valio
+                        la pena, ignora que la transicion esta culerisima jejeje...
+                        esq no encontre una forma de hacerlo mejor pero its ok ig (Por cierto esto ira desde el mas
+                        reciente hasta al mas antiguo pq... pq lo estoy haciendo sobre la marcha)
+                    </p>
+
+                    <h2> 1.Cuando nos casamos como Yuri y Sayori</h2>
+                    <img width="200px" src="https://file.garden/agSebwzKlhVH5aPS/image-21_edit_86674071314934.jpg"
+                        alt="boda1">
+                    <img width="200px" src="https://file.garden/agSebwzKlhVH5aPS/image-19_edit_86703563386628.jpg"
+                        alt="boda2"> <br />
+
+                    <h2> 2.Cuando empezamos a hacer match</h2>
+                    <img width="200px" src="https://file.garden/agSebwzKlhVH5aPS/29fa451419f7e8d06cc5bc5b1df68cc5.jpg"
+                        alt="match1">
+                    <img width="200px" src="https://file.garden/agSebwzKlhVH5aPS/1ebef6ae8983757d5325c50a00f8b7fb.jpg"
+                        alt="match2">
+                    <p> No se si te parezca increible pero para mi me encanto desde el primer momento :3 </p>
+
+                    <h2> 3. Cuando jugaste doki doki y yo estaba alli</h2>
+                    <img width="200px" src="https://file.garden/agSebwzKlhVH5aPS/image%20(2).jpg" alt="doki1">
+                    <img width="200px" src="https://file.garden/agSebwzKlhVH5aPS/image.jpg" alt="doki2">
+
+                    <h2> 4. Esto. </h2>
+                    <img width="200px" src="https://file.garden/agSebwzKlhVH5aPS/image%20(3).jpg" alt="stop"
+                        style="filter: blur(10px); cursor: pointer;" onclick="this.style.filter = 'none'"></img>
+                    <p> no funny funny (parami)</p>
+
+                    <h2> 5. Cuando hicimos match de blackberry y plum y jugamos sewh y buff bassie</h2>
+                    <img width="200px" src="https://file.garden/agSebwzKlhVH5aPS/Screenshot_20260506_224429_com_r.jpg"
+                        alt="juego1">
+                    <img width="200px" src="https://file.garden/agSebwzKlhVH5aPS/RobloxScreenShot20260502_1021299.jpg"
+                        alt="juego2">
+
+                    <h2> 6. El monton de capturas de yo diciendo mamadas</h2>
+                    <img width="200px" src="https://file.garden/agSebwzKlhVH5aPS/contex.jpg" alt="pelleja1">
+                    <img width="200px" src="https://file.garden/agSebwzKlhVH5aPS/contex2.jpg" alt="pelleja2">
+                    <img width="200px" src="https://file.garden/agSebwzKlhVH5aPS/contex3.jpg" alt="pelleja3">
+
+                    <h2> 7. El alien</h2>
+                    <img width="200px" src="https://file.garden/agSebwzKlhVH5aPS/dc702a33-208d-4d00-9370-07f96f21.jpg"
+                        alt="alien1">
+                    <img width="200px" src="https://file.garden/agSebwzKlhVH5aPS/2023_09_14_142397_1694673212._la.jpg"
+                        alt="alien2">
+
+                    <h2> 8. Pomegranate y Vanilla cookie</h2>
+                    <img width="200px" src="https://file.garden/agSebwzKlhVH5aPS/image%20(4).jpg" alt="cookies1">
+
+                    <h2> 9. Cuando jugamos shawarma jaja</h2>
+                    <img width="200px" src="https://file.garden/agSebwzKlhVH5aPS/image%20(5).jpg" alt="shawarma1">
+                    <img width="200px" src="https://file.garden/agSebwzKlhVH5aPS/RobloxScreenShot20260406_1324243.jpg"
+                        alt="shawarma2">
+
+                    <h2> 10. CUANDO ME DEJASTE CASARME CON BLACKBERRY</h2>
+                    <img width="200px" src="https://file.garden/agSebwzKlhVH5aPS/1c167aad-b54c-4c98-9c69-9e0c8ffa.jpg"
+                        alt="waif1">
+                    <img width="200px"
+                        src="https://file.garden/agSebwzKlhVH5aPS/WhatsApp%20Image%202026-05-12%20at%2001.22.09.jpeg"
+                        alt="waif2">
+
+                    <h2> Y por ultimo pero no menos importante..</h2>
+
+                    <p> Todo, por que cada momento contigo es unico y...</p>
+
+                    <h2 style="text-align: center; color: #b3153f; font-family: 'Intel One Mono', monospace;">Hermoso ❤
+                    </h2> <br />
+
+                    <img width="300px" src="https://file.garden/agSebwzKlhVH5aPS/fin.jpg" alt="te amo"></img>
+
+
+                    
+
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="barra">
+
+            <img onclick="abrircontenidoRec()"
+                src="https://i.pinimg.com/1200x/e0/fb/95/e0fb95531ab887787d2a8fd7209ad2b6.jpg" alt="sealicon">
+            <h3 style="text-align: center;"> Recuerditos </h3>
+
+        </div>
+
+        <div class="cuerpo">
+
+
+            <img style="position: absolute; top: 20px; right: 100px;" width="150px"
+                src="https://media.tenor.com/1GRq5kloKP0AAAAi/ddlc-sayori.gif" alt="Imagen de sayori">
+
+            <h1>Pagina de nin/cam</h1>
+
+            <img width="200px" src="https://media1.tenor.com/m/S4oFuORBrvoAAAAd/bassie-bassie-dandys-world.gif"
+                alt="Imagen de cam"></img>
+
+
+
+
+            <h4>Por Andrea cof cof... </h4>
+            <button onclick="toggleAudio()">▶ Presiona aqui para la musica jejeje...</button>
+
+
+            <audio id="miAudio" loop>
+
+                <source
+                    src="https://file.garden/agSebwzKlhVH5aPS/La%20La%20Land%20-%20Mia%20_%20Sebastian%20Theme(128K).mp3"
+                    type="audio/mpeg">
+
+
+            </audio>
+
+            <p>Nin/Cam es una de las mejores que he conocido sinceramente, es totalmente recomendado ya que es muy silly
+                y puede entender la mayor parte de lo que le dices y enseñes, siendo sincera estoy muy agradecida con su
+                amistad
+                y nunca podre terminar de agradecer su apoyo y amistad, esta pagina para el y solo para el (Pd: tqm
+                cam💖) </p>
+
+
+
+            <hr />
+
+            <img width="300px" src="https://media1.tenor.com/m/EwSHtBjvnkkAAAAC/dandys-world-bassie.gif">
+            <img width="300px" src="https://file.garden/agSebwzKlhVH5aPS/20260428_214410.jpg" alt="Imagen de cam y yo"
+                style="filter: blur(10px); cursor: pointer;" onclick="this.style.filter = 'none'"></img>
+
+            <p> Mira us, jaja, sinceramente no supe que poner luego de todo esto y a la hora que estoy escribiendo esto
+                solo estoy tratando de abrir mi corazon y tratar de expresar lo que se me venga a la mente pq se me
+                pueden venir millones
+                de cosas a la mente sobre ti y sobre lo mucho que te quiero pero es tan complicado ordenarlo y
+                expresarlo que no se ni por donde empezar, primero que anda como lo dije en la parte inicial obviamente
+                eres una amistad muy apreciada para mi,
+                y no que haria sin ti, sinceramente crei que al inicio de conocernos nos llevariamos super mal pero
+                mirame, te estoy haciendo una pagina con mis propias manos jaja, todavia recuerdo cuando te queme esa
+                casa en minecraft la primera vez que te conoci
+                con estela, jejejeje (OK NO TENIA NADA MAS QUE PENSAR) y despues lo mucho que me has ayudado a sentirme
+                mejor y todo eso, ultimamente ha estado mejorando y me siento muy feliz aun mas que antes gracias a tu
+                ayuda, cada segundo contigo en un subidon de energia
+                para ser sincera, y se que aveces puedo ser un poco intensa o molesta pero es porque te quiero mucho y
+                no puedo evitar expresarme de esa forma hacia la gente que quiero mucho, y puess eso es todo jaja, trate
+                de sacar la mayoria que salga de mi corazon
+                enserio tqm porfavor nunca me dejes (PD: callen a la ia que quiere escribir esto por mi que me
+                desconcentra, y si quieres que agregue algo me avisas oki? :3)
+            </p>
+
+            <hr />
+
+            <h2> cositas que nos representan a ambos para llenar mas espacio jejeje...</h2>
+
+            <div class="Imagenes">
+
+                <img width="200px" src="https://i.pinimg.com/736x/4e/99/04/4e9904cbad136edb9c8a2271d7ddf93f.jpg"
+                    alt="Imagen de cam y yo"></img>
+                <img width="200px" src="https://i.pinimg.com/736x/89/69/43/89694319077f19d868701108fe92381d.jpg"
+                    alt="Imagen de cam y yo2"></img>
+                <img width="200px" src="https://i.pinimg.com/736x/b0/97/b5/b097b57e41dd2346a3e37338c0cc6a7a.jpg"
+                    alt="Imagen de cam y yo3"></img>
+                <img width="200px" src="https://i.pinimg.com/736x/2e/34/3a/2e343a3e0449b586286f49ec1ba55478.jpg"
+                    alt="Imagen de cam y yo4"></img>
+                <img width="200px" src="https://i.pinimg.com/736x/37/ac/a0/37aca07e7f1f0bc0d041b15a352df4c1.jpg"
+                    alt="Imagen de cam y yo5"></img>
+                <img width="200px" src="https://i.pinimg.com/736x/47/d6/ff/47d6ff0183792fe1b6efbc3a4b21b9cb.jpg"
+                    alt="Imagen de cam y yo6"></img>
+
+            </div>
+
+            <hr />
+
+            <h2 style="text-align: center; color: #b3153f; font-family: 'Intel One Mono', monospace;">Con mucho amor,
+                Andrea💖</h2> <br />
+
+            <img width="350px" style="display: block; margin: auto;"
+                src="https://media1.tenor.com/m/_TvO2q1LtmQAAAAd/chocobasket-bassie.gif" alt="final"></img>
+
+
+
+        </div>
+    </div>
+    <button style="position: absolute; top: 65px; left: 50px;" onclick="togglebarra()">☰</button>
+
+    <script>
+        function togglebarra() {
+            const barra = document.querySelector('.barra');
+            if (barra.style.width === '200px') {
+                barra.style.width = '0px';
+            } else {
+                barra.style.width = '200px';
+            }
+        }
+    </script>
+
+    <script>
+        function toggleAudio() {
+            const audio = document.getElementById('miAudio');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+
+    </script>
+    <script>
+        function abrircontenidoRec() {
+            document.getElementById('pageRec').style.display = 'block';
+        }
+
+        function cerrarcontenidoRec() {
+            document.getElementById('pageRec').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
