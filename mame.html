@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catxplosion</title>
+
+    <style>
+        #cat {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: aparecer 1s ease;
+        }
+
+        #explosion {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+
+        @keyframes aparecer {
+            from {
+                transform: scale(0.1);
+                transform-origin: center;
+                opacity: 1;
+            }
+
+            to {
+                transform: scale(1);
+                transform-origin: center;
+                opacity: 0;
+            }
+        }
+        body {
+            background-size: cover;
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+  <div class="body">  
+
+    <img onclick = "explosionanimacion()" id="cat" width="500px" src="https://i.pinimg.com/736x/f9/2e/29/f92e298962a0bd8ef1a48f58218bcf5f.jpg"
+        alt="cat muslim"></img>
+    <img id="explosion" width="750px" src="https://file.garden/agSebwzKlhVH5aPS/GIF_20260515_185805_974.gif" velocity="1.5"
+        alt="explosion"></img>
+
+  </div>   
+  
+  <audio id = "explosionsound" onended = "window.close()">
+    <source src = "https://file.garden/agSebwzKlhVH5aPS/Andreapotato%20-%20Sin%20t%C3%ADtulo%2015%20may%202026%2C%201849%202026-05-15%2018_49.m4a" type = "audio/mpeg">
+  </audio>
+
+  <script>
+        function explosionanimacion() {
+            document.getElementById("cat").style.display = "none";
+            document.getElementById("explosion").style.display = "block";
+            document.getElementById("explosionsound").play();
+        }
+    </script>
+
+</body>
+
+</html>
