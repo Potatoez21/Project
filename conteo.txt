@@ -1,0 +1,20 @@
+conteo
+local N = 0
+
+print("Iniciando prueba...")
+
+io.read()
+
+while (N <= 25) do
+
+  N = N + 1
+
+  print(N)
+
+  os.execute("sleep 0.1")
+
+end  
+
+
+
+

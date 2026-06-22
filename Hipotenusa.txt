@@ -1,0 +1,17 @@
+Hipotenusa
+local C1
+local C2
+local H
+
+print ("Calcular hipotenusa")
+print ("Primer cateto")
+
+C1 = tonumber(io.read())
+
+print ("Segundo cateto")
+
+C2 = tonumber(io.read())
+
+H = math.sqrt((C1 ^ 2) + (C2 ^ 2))
+
+print ("La hipotenusa es ".. H)

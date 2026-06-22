@@ -1,0 +1,15 @@
+Comparativo
+edad = 0
+
+
+print("declara tu edad for empanada 👅")
+
+edad = tonumber(io.read())
+
+if edad < 7 then
+  print("no puedes comer empanada")
+else
+  print("puedes comer empanada")
+
+end
+

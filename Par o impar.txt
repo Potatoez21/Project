@@ -1,0 +1,27 @@
+Par o impar
+
+print("Programa para par o impar")
+
+while true do
+  print ("Si desea salir presione 0")
+  local n
+  n = tonumber(io.read())
+
+
+  if n == 0 then
+
+    print("saliendo...")
+  break
+  end
+
+
+if n % 2 == 0 then
+  print("es par")
+else
+  print("es impar")  
+
+end
+end
+
+
+

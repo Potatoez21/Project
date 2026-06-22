@@ -1,0 +1,46 @@
+Pan con jalea
+print ("como hacer un pan con mantequilla y jalea")
+
+print ("Si desea salir presione 0")
+
+while true do
+
+  local n
+
+  n = tonumber(io.read())
+
+    if n == 0  then
+
+      print ("Saliendo...")
+
+      break
+    end
+
+    if n == 1 then
+
+      print ("Paso 1: Conseguir los ingredientes necesarios (pan, jalea, mantequilla, cuchillo para untar)")
+
+    end
+
+    if n == 2 then
+
+      print ("Paso 2: Untar los ingredientes en el pan")
+
+    end
+
+    if n == 3 then
+
+      print ("Cerrar pan y disfrutar")
+
+    end
+
+    if n == 4 then
+
+      print ("proceso completado,    saliendo....")
+
+      break
+    end
+
+end  
+
+
