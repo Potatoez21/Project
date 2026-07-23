@@ -5,9 +5,11 @@
 using namespace std;
 
 int main() {
+
     
-    double velocidad;
-    double masa;
+    
+    double velocidad = 0;
+    double masa = 0;
     double radio;
 
         cout << "resolvedor de velocidades circulares" << endl;
@@ -16,7 +18,7 @@ int main() {
 
         cout << "introduzca los datos actuales (masa(en kilogramos), velocidad(en metros sobre segundo), radio(en metros)) para mostrar los datos" << endl;
 
-        cout << "asa" << endl;
+        cout << "masa" << endl;
 
         cin >> masa;
 
@@ -26,7 +28,15 @@ int main() {
 
         cout << "radio" << endl;
 
-        cin >> radio;
+        cin >> radio; 
+
+         do{
+            
+
+            cin >> radio;
+            cout << "introduzca un radio mayor a 0" << endl;
+        }while (radio <= 0);
+
 
             double fuerza = masa * pow(velocidad, 2) / radio;
             double velocidadangular = velocidad / radio;
@@ -38,4 +48,5 @@ int main() {
         cout << "aceleracion: " << aceleracion << endl;    
 
     return 0;    
+    
 }
